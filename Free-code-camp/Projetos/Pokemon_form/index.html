@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<style>
+	.main{
+		background-image:url("fundo3.png");  
+	}
+
+	#title{
+		text-align: center;
+		font-family: sans-serif;
+		color:#d97445;
+	}
+
+	#description{
+		text-align: center;
+		font-family: sans-serif;
+		color: #d97445;
+	}
+
+	.names{
+		font-family: sans-serif;
+		font-size: 20px;
+		color: #d97445;
+		margin-left: 300px;
+		margin-top: 50px;
+	}
+
+	.names1{
+		font-family: sans-serif;
+		font-size: 20px;
+		color: #d97445;
+		margin-left: 300px;
+		margin-top: 10px;
+		text-align: justify;
+	}
+
+	.container{
+		margin-top:150px ;
+		margin-left:100px;
+		margin-right:100px;
+		border-radius: 20px;
+		display: grid;
+		background: #1a5363;
+		grid-template-columns: 5fr;
+		grid-template-rows: 5fr;
+	}
+
+	.form-control{
+		margin-left: 300px;
+		margin-right: 300px;
+		border-radius: 5px;
+		font-size: 20px;
+		display: block;
+	}
+	.checkboxes{
+		display: inline-block;
+  		margin-right: 0.625rem;
+  		min-height: 1.25rem;
+ 		min-width: 1.25rem;
+ 		*overflow: hidden;
+ 		vertical-align: top;
+	}
+
+	label {
+  	display: block;
+  	padding-left: 15px;
+  	text-indent: -15px;
+	}
+</style>
+
+<html>
+<head>
+	<title>Pokemon Form</title>
+</head>
+<body class="main">
+	<section class="container">
+		<div>
+			<h1 id="title">Make your own Pokemon</h1>
+			<p id="description">Help us to make new Pokemons!</p>
+		</div>
+		<label class="names">Pokemon name</label>
+		<input type="text" name="name-pokemon" class="form-control" placeholder="Enter your Pokemon name" required="">
+		<label class="names">E-mail</label>
+		<input type="text" name="email" class="form-control" placeholder="Enter your E-mail" required="">
+		<p class="names">Wich type will be?Please choose max 2 types. </p>
+		<label class="names1">
+		<input type="checkbox" name="type" class="checkboxes">Grass</input>
+		<input type="checkbox" name="type" class="checkboxes">Normal</input>
+		<input type="checkbox" name="type" class="checkboxes">Poison</input>
+		<input type="checkbox" name="type" class="checkboxes">Fire</input>
+		<input type="checkbox" name="type" class="checkboxes">Dark</input>
+		<input type="checkbox" name="type" class="checkboxes">Rock</input>
+		</label>
+		<label class="names1">
+		<input type="checkbox" name="type" class="checkboxes">Water</input>
+		<input type="checkbox" name="type" class="checkboxes">Ground</input>
+		<input type="checkbox" name="type" class="checkboxes">Fighter</input>
+		<input type="checkbox" name="type" class="checkboxes">Bug</input>
+		<input type="checkbox" name="type" class="checkboxes">Fairy</input>
+		<input type="checkbox" name="type" class="checkboxes">Eletric</input>
+		</label>
+		<label class="names1">
+		<input type="checkbox" name="type" class="checkboxes">Ghost</input>
+		<input type="checkbox" name="type" class="checkboxes">Dragon</input>
+		<input type="checkbox" name="type" class="checkboxes">Psychic</input>
+		<input type="checkbox" name="type" class="checkboxes">Fly</input>
+		<input type="checkbox" name="type" class="checkboxes">Steel</input>
+		<input type="checkbox" name="type" class="checkboxes">Ice</input>
+		</label>
+		<p class="names">Wich region will your Pokemon be? </p>
+		<select id="regiao"class="form-control" required="">
+		<option value="kanto">Kanto</option>
+		<option value="johto">Johto</option>
+		<option value="hoenn">Hoenn</option>
+		<option value="sinnoh">Sinnoh</option>
+		<option value="unova">Unova</option>
+		<option value="kalos">Kalos</option>
+		<option value="alola">Alola</option>
+		<option value="galar">Galar</option>
+		</select>
+		
+
+
+
+		<!--<select class="form-control">
+			<option value="Grass">Grass</option>
+			<option value="Fire">Fire</option>
+			<option value="Water">Water</option>
+			<option value="Ice">Ice</option>
+			<option value="Rock">Rock</option>
+			<option value="Bug">Bug</option>
+			<option value="Fly">Fly</option>
+			<option value="Dragon">Dragon</option>
+			<option value="Grass">Grass</option>
+			<option value="Grass">Grass</option>
+		</select>
+-->
+	</section>
+</body>
+</html>
