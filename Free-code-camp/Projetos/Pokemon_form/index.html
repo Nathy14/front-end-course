@@ -7,7 +7,7 @@
 	#title{
 		text-align: center;
 		font-family: sans-serif;
-		color:#d97445;
+		color:#f28654;
 	}
 
 	#description{
@@ -51,6 +51,7 @@
 		font-size: 20px;
 		display: block;
 	}
+
 	.checkboxes{
 		display: inline-block;
   		margin-right: 0.625rem;
@@ -60,10 +61,32 @@
  		vertical-align: top;
 	}
 
-	label {
-  	display: block;
-  	padding-left: 15px;
-  	text-indent: -15px;
+	.radios{
+		display: inline-block;
+		margin-right: 0.625rem;
+  		min-height: 1.25rem;
+ 		min-width: 1.25rem;
+	}
+	.image{
+		width: 40px;
+		height: 40px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	table{
+		display: table-cell;
+	}
+
+	.text_area{
+		height: 150px;
+		width: 650px;
+		font-size: 20px;
+	}
+
+	.footer{
+		margin-top: 80px;
+		text-align: center;
 	}
 </style>
 
@@ -73,67 +96,71 @@
 </head>
 <body class="main">
 	<section class="container">
-		<div>
-			<h1 id="title">Make your own Pokemon</h1>
+			<table border="0" width="=450" align="center">
+			<tr>
+				<td height="89"><img class="image"src="pokebola.png"><td>
+				<td height="89"><h1 id="title">Make your own Pokemon</h1></td>
+				<td height="89"><img class="image"src="pokebola.png"><td>
+			</tr>
+			</table>
 			<p id="description">Help us to make new Pokemons!</p>
-		</div>
-		<label class="names">Pokemon name</label>
-		<input type="text" name="name-pokemon" class="form-control" placeholder="Enter your Pokemon name" required="">
-		<label class="names">E-mail</label>
-		<input type="text" name="email" class="form-control" placeholder="Enter your E-mail" required="">
-		<p class="names">Wich type will be?Please choose max 2 types. </p>
-		<label class="names1">
-		<input type="checkbox" name="type" class="checkboxes">Grass</input>
-		<input type="checkbox" name="type" class="checkboxes">Normal</input>
-		<input type="checkbox" name="type" class="checkboxes">Poison</input>
-		<input type="checkbox" name="type" class="checkboxes">Fire</input>
-		<input type="checkbox" name="type" class="checkboxes">Dark</input>
-		<input type="checkbox" name="type" class="checkboxes">Rock</input>
-		</label>
-		<label class="names1">
-		<input type="checkbox" name="type" class="checkboxes">Water</input>
-		<input type="checkbox" name="type" class="checkboxes">Ground</input>
-		<input type="checkbox" name="type" class="checkboxes">Fighter</input>
-		<input type="checkbox" name="type" class="checkboxes">Bug</input>
-		<input type="checkbox" name="type" class="checkboxes">Fairy</input>
-		<input type="checkbox" name="type" class="checkboxes">Eletric</input>
-		</label>
-		<label class="names1">
-		<input type="checkbox" name="type" class="checkboxes">Ghost</input>
-		<input type="checkbox" name="type" class="checkboxes">Dragon</input>
-		<input type="checkbox" name="type" class="checkboxes">Psychic</input>
-		<input type="checkbox" name="type" class="checkboxes">Fly</input>
-		<input type="checkbox" name="type" class="checkboxes">Steel</input>
-		<input type="checkbox" name="type" class="checkboxes">Ice</input>
-		</label>
-		<p class="names">Wich region will your Pokemon be? </p>
-		<select id="regiao"class="form-control" required="">
-		<option value="kanto">Kanto</option>
-		<option value="johto">Johto</option>
-		<option value="hoenn">Hoenn</option>
-		<option value="sinnoh">Sinnoh</option>
-		<option value="unova">Unova</option>
-		<option value="kalos">Kalos</option>
-		<option value="alola">Alola</option>
-		<option value="galar">Galar</option>
-		</select>
-		
-
-
-
-		<!--<select class="form-control">
-			<option value="Grass">Grass</option>
-			<option value="Fire">Fire</option>
-			<option value="Water">Water</option>
-			<option value="Ice">Ice</option>
-			<option value="Rock">Rock</option>
-			<option value="Bug">Bug</option>
-			<option value="Fly">Fly</option>
-			<option value="Dragon">Dragon</option>
-			<option value="Grass">Grass</option>
-			<option value="Grass">Grass</option>
-		</select>
--->
+			<label class="names">Pokemon name</label>
+				<input type="text" name="name-pokemon" class="form-control" placeholder="Enter your Pokemon name" required="">
+			<label class="names">E-mail</label>
+				<input type="text" name="email" class="form-control" placeholder="Enter your E-mail" required="">
+			<p class="names">Wich type will be?Please choose max 2 types. </p>
+			<label class="names1">
+				<input type="checkbox" name="type" class="checkboxes"><font color="#10de02">Grass</font></input>
+				<input type="checkbox" name="type" class="checkboxes"><font color="#e3947e">Normal</font></input>
+				<input type="checkbox" name="type" class="checkboxes"><font color="#9603f2">Poison</font></input>
+				<input type="checkbox" name="type" class="checkboxes"><font color="#de1300">Fire</font></input>
+				<input type="checkbox" name="type" class="checkboxes"><font color="black">Dark</font></input>
+				<input type="checkbox" name="type" class="checkboxes"><font color="#3d1a15">Rock</font></input>
+			</label>
+				<label class="names1">
+				<input type="checkbox" name="type" class="checkboxes"><font color="#22b2ff">Water</font></input>
+				<input type="checkbox" name="type" class="checkboxes"><font color="#a14524">Ground</font></input>
+				<input type="checkbox" name="type" class="checkboxes"><font color="#fa3f00">Fighter</font></input>
+				<input type="checkbox" name="type" class="checkboxes"><font color="#209c01">Bug</font></input>
+				<input type="checkbox" name="type" class="checkboxes"><font color="#ff6886">Fairy</font></input>
+				<input type="checkbox" name="type" class="checkboxes"><font color="#fae713">Eletric</font></input>
+			</label>
+			<label class="names1">
+				<input type="checkbox" name="type" class="checkboxes"><font color="#4e01a6">Ghost</font></input>
+				<input type="checkbox" name="type" class="checkboxes"><font color="#34b0a0">Dragon</font></input>
+				<input type="checkbox" name="type" class="checkboxes"><font color="#fc01c6">Psychic</font></input>
+				<input type="checkbox" name="type" class="checkboxes"><font color="#6379b0">Fly</font></input>
+				<input type="checkbox" name="type" class="checkboxes"><font color="#918f90">Steel</font></input>
+				<input type="checkbox" name="type" class="checkboxes"><font color="#76d0e0">Ice</font></input>
+			</label>
+			<p class="names">Wich region will your Pokemon be? </p>
+			<select id="regiao"class="form-control" required="">
+				<option value="kanto">Kanto</option>
+				<option value="johto">Johto</option>
+				<option value="hoenn">Hoenn</option>
+				<option value="sinnoh">Sinnoh</option>
+				<option value="unova">Unova</option>
+				<option value="kalos">Kalos</option>
+				<option value="alola">Alola</option>
+				<option value="galar">Galar</option>
+			</select>
+			<p class="names">Will your Pokemon have any evolution?</p>
+			<label class="names1">
+				<input type="radio" name="evolution" value="yes" class="radios" checked="">Yes</input>
+				<input type="radio" name="evolution" values="no"class="radios">No</input>
+			</label>
+			<p class="names">Choose the name of your Pokemon Evolutions</p>
+			<label class="names1">1º Evolution Name</label>
+				<input type="text" name="evolution1" class="form-control" placeholder="Enter your 1º Pokemon Evolution name" required="">		
+			</label>
+			<label class="names1">2º Evolution Name</label>
+				<input type="text" name="evolution2" class="form-control" placeholder="Enter your 2º Pokemon Evolution name" required="">		
+			</label>
+			<p class="names">Describe your Pokemon's story </p>
+			<div class="form-control">
+			<textarea id="story" class="text_area" name="story" placeholder="Enter your Pokemon's story here..."></textarea>
+			</div>
+			<p class="footer"><strong>&reg All rights reservd</strong>
 	</section>
 </body>
 </html>
