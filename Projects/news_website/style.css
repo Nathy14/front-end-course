@@ -145,6 +145,50 @@ h2{
     padding-left: 20px;
 }
 
+label{
+  display: block;
+  cursor: pointer;
+}
+
+input{
+  font-size: 0.9em;
+  background-color: #fff;
+  padding: 5px;
+  width: 125px;
+}
+
+input.submit{
+  width: 80px;
+  color: #fff;
+  background-color: #b10333;
+  border: 2px solid #870529;
+}
+
+/* Formatando imagens */
+
+img.imagem-principal{
+  border: 3px solid #dfdfdf;
+  width: 98%;
+}
+
+/* formatando cabeçalhos */
+
+h3{
+  text-transform: uppercase;
+  display: inline;
+  font-size: 0.8em;
+  padding: 3px;
+}
+
+.destaque h3{
+  background: #b10333;
+  color: #fff;
+}
+
+.entrevista h3{
+  background: #de003e;
+}
+
 /* Rodape */
 
 #container-rodape{
