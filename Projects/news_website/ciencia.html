@@ -1,78 +1,154 @@
 <!DOCTYPE html>
-<html dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Notícias Cidade</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body class="ciencia">
+<html>
+	<head>
+		<title>Notícias cidade - Seu site de notícias</title>
+		<meta charset="utf-8">
 
-        <div id="container"> <!--container-->
+		<!-- Estilo customizado -->
+		<link rel="stylesheet" type="text/css" href="style.css">
 
-          <div id="topo"> <!--topo-->
-            <h1 class="logo">Nóticias Cidade</h1>
-            <ul id = "navegacao">
-              <li class = " primeiro">
-                <a id="home" href="index.html">Home</a>
-              </li>
-              <li>
-                <a id="brasil" href="brasil.html">Brasil</a>
-              </li>
-              <li>
-                <a id="internacional" href="internacional.html">Internacional</a>
-              </li>
-              <li>
-                <a id="economia" href="economia.html">Economia</a>
-              </li>
-              <li>
-                <a id="saude" href="saude.html">Saúde</a>
-              </li>
-              <li>
-                <a id="ciencia" href="ciencia.html">Ciência</a>
-              </li>
-              <li>
-                <a id="fotos" href="fotos.html">Fotos</a>
-              </li>
-            </ul>
+	</head>
 
-          </div> <!--fim topo-->
+	<body id="duas-colunas" class="ciencia">
 
-        </div> <!--fim container-->
+		<!-- Início container -->
+		<div id="container">
 
-        <div id="corpo-conteudo"> <!--corpo-conteudo-->
+			<!-- Início topo -->
+			<div id="topo">
+				<h1 class="logo">Notícias cidade</h1>
+				<ul id="navegacao">
+					<li class="primeiro">
+						<a id="home" href="index.html">home</a>
+					</li>
+					<li>
+						<a id="brasil" href="brasil.html">Brasil</a>
+					</li>
+					<li>
+						<a id="internacional" href="internacional.html">Internacional</a>
+					</li>
+					<li>
+						<a id="economia" href="economia.html">Economia</a>
+					</li>
+					<li>
+						<a id="saude" href="saude.html">Saúde</a>
+					</li>
+					<li>
+						<a id="ciencia" href="ciencia.html">Ciência</a>
+					</li>
+					<li>
+						<a id="fotos" href="fotos.html">Fotos</a>
+					</li>
+				</ul>
+			</div><!-- fim /topo -->
 
-          <div id="menu-lateral"> <!--menu-lateral-->
+			<!-- Início conteudo -->
+			<div id="conteudo">
 
-            <div class="conteudo-lateral">
-            </div>
+				<div id="primario">
 
-            <div class="conteudo-lateral">
-            </div>
+					<div class="caixa destaque">
+						<h2>Ciência</h2>
+						<div class="caixa-conteudo">
 
-          </div> <!--fim menu-lateral-->
+							<h3>Novas descobertas</h3>
+							<img class="imagem-principal" src="images/tecnologia.jpg" width="100%">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							</p>
+							<a href="">Leia mais!</a>
 
-          <div id="conteudos"> <!--conteudos-->
+						</div>
+					</div>
 
-            <div class="texto-conteudo">
-            </div>
+					<div class="caixa">
+						<h2>Mundo</h2>
+						<div class="caixa-conteudo">
 
-            <div class="texto-conteudo">
-            </div>
+							<ul id="lista-noticias">
+								<li>
+									<a href="">
+										<img src="images/tecnologia.jpg" width="80">
+										<h3>Novas tecnologias!</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur...</p>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="images/doutor.jpg" width="80">
+										<h3>Novas tecnologias!</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur...</p>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="images/taxi.jpg" width="80">
+										<h3>Novas tecnologias!</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur...</p>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="images/cidade.jpg" width="80">
+										<h3>Novas tecnologias!</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur...</p>
+									</a>
+								</li>
+							</ul>
 
-            <div class="texto-conteudo">
-            </div>
+						</div>
+					</div>
 
-          </div><!--dim conteudos-->
+				</div>
 
+				<!-- Início lateral -->
+				<div id="lateral">
 
-        </div> <!--fim corpo-conteudo-->
+					<div class="caixa">
+						<h2>Entrevistas</h2>
+						<div class="caixa-conteudo">
+							<ul>
+								<li><a href="">José Almeida</a></li>
+								<li><a href="">Felipe Silva</a></li>
+								<li><a href="">Renato Rodrigues</a></li>
+								<li><a href="">Abelardo Silveira</a></li>
+								<li><a href="">André Carlos</a></li>
+								<li><a href="">Márcio Mello</a></li>
+								<li><a href="">João Pedro</a></li>
+								<li><a href="">Fernando Weiss</a></li>
+							</ul>
+						</div>
+					</div>
 
+					<div class="caixa">
+						<h2>News</h2>
+						<div class="caixa-conteudo">
 
+							<form>
+								<div>
+									<label for="email">Email:</label>
+									<input type="text" name="email" id="email" placeholder="E-mail">
+								</div>
+								<div>
+									<input class="submit" type="submit" value="Cadastrar" >
+								</div>
+							</form>
 
+						</div>
+					</div>
 
+				</div><!-- fim /lateral -->
 
+			</div><!-- fim /conteudo -->
 
+		</div><!-- fim /container -->
 
+		<div id="container-rodape" style="clear: both;">
+			<div id="rodape">
+				&copy; Copyright 2000-2018 Notícias cidade
+			</div>
+		</div>
 
-  </body>
+	</body>
+
 </html>
