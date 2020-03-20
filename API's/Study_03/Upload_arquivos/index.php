@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -9,6 +13,12 @@
     <div  class="header">
       <h2>Upload File</h2>
     </div>
+    <?php
+      if(isset($_SESSION['msg'])){
+        echo $_SESSION['msg'];
+        unset($_SESSION['msg']);
+      }
+    ?>
     <form method="post" action="upload.php" enctype="multipart/form-data">
       <div class="input-group">
         <label>Choose your file: </label>
