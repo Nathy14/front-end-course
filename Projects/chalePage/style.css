@@ -11,7 +11,7 @@ body {
 }
 
 #container {
-	background: #ede9cc;
+	background: #ede9cc url(images/bg-container.png) top center repeat-y;
 	margin: 0 auto;
 	min-width: 740px;
 	max-width: 1180px;
@@ -123,15 +123,23 @@ ul#navegacao a:hover{
 
 #area-principal{
 	float: left;
-	width: 50%
+	width: 50%;
+	background: url(images/bg-area-principal.png) top left repeat-x;
+	padding: 15px 0px;
 }
 
 #area-lateral{
 	float: right;
 	width: 50%;
+	background: url(images/bg-area-lateral.png) top left repeat-x;
+	padding: 20px 0px;
 }
 
 .conteudo{
 	margin: 0 auto;
 	width: 90%;
+}
+
+#rodape{
+	clear: both;
 }
