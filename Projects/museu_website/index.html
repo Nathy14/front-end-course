@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Museu Nacional</title>
+    <meta charset="utf-8">
+     <!--Normalize CSS-->
+     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+     <!--Estilo-->
+     <link rel="stylesheet"  type="text/css" href="css/style.css">
+
+     <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+     <![endif]-->
+  </head>
+  <body>
+
+    <div id="container"><!-- inicio container -->
+
+      <header>
+        <div id="logo">
+          <h1><a href="#">Museu Nacional</a></h1>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Exposições</a></li>
+            <li><a href="#">Pesquisa</a></li>
+            <li><a href="#">Acervo</a></li>
+            <li><a href="#">Vídeos</a></li>
+            <li><a href="#">Fotos</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="principal">
+
+        <div id="conteudo">
+          <section id="capa">
+            <img src="img/museu.png">
+          </section>
+        </div>
+
+        <aside>
+          <section id="depoimento">
+            <img src="img/depoimento.png">
+          </section>
+
+          <section id="visita">
+            <h4>Faça uma visita</h4>
+            <form>
+              <fieldset>
+                <legend>Selecione uma data</legend>
+                <label for ="data">Data</label>
+                <input class="campo"type="text" id="data" value="dd/mm/aaaa">
+                <label for ="qtd">Qtd pessoas</label>
+                <input class="campo" style ="width: 30px" type="text" id="qtd" value="1">
+              </fieldset>
+              <input class="botao" type="submit" value="Verificar disponibilidade">
+            </form>
+          </section>
+
+          <section id="galeria">
+            <h4>Galeria de fotos</h4>
+            <a href="#">
+                <img src="img/imagem1.jpg" height="93px" width= "94px" alt="Descrição Imagem">
+            </a>
+            <a href="#">
+                <img src="img/imagem2.jpg" height="93px" width= "94px" alt="Descrição Imagem">
+            </a>
+            <a href="#">
+                <img src="img/imagem3.jpg" height="93px" width= "94px" alt="Descrição Imagem">
+            </a>
+            <a href="#">
+                <img src="img/imagem4.jpg" height="93px" width= "94px" alt="Descrição Imagem">
+            </a>
+          </section>
+
+
+        </aside>
+
+      </div>
+
+
+
+    </div> <!-- fim container -->
+
+
+  </body>
+</html>
