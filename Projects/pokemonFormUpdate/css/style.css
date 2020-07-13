@@ -1,0 +1,30 @@
+
+html, body, #home{
+  height: 100%;
+
+}
+
+body{
+  background: url(../imagens/fundo.png);
+  background-attachment: fixed;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+
+nav.navbar-estilo{
+  background: rgb(72, 81, 163);
+  padding: 15px 0px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: white;
+}
+
+.capa{
+  text-align: center;
+}
+
+#home .container{
+  background-color: #1a5363;
+}
