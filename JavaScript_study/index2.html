@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de javascripto</title>
+
+    <script>
+      var nome = prompt("Digite seu nome: ")
+      var altura = prompt("Digite seu altura em centimetros: ")
+      var peso = prompt("Digite seu peso: ")
+      altura = parseFloat(altura)
+      peso = parseFloat(peso)
+      altura = altura/100
+      var calcula = peso/(altura*altura)
+      var classificacao = ''
+
+      if(calcula<16){
+        classificacao = "Baixo peso muito grave"
+      }
+      else if(calcula>=16 && calcula<=16.99){
+        classificacao = "Baixo peso grave"
+      }
+      else if(calcula>=17 && calcula<=18.49){
+        classificacao ="Baixo peso"
+      }
+      else if(calcula>=18.50 && calcula<=24.99){
+        classificacao ="Peso normal"
+      }
+      else if(calcula>=25 && calcula<=29.999){
+        classificacao ="Sobrepeso"
+      }
+      else if(calcula>=30 && calcula<=34.99){
+        classificacao ="Obesidade grau 1"
+      }
+      else if(calcula>=35 && calcula<=39.99){
+        classificacao ="Obesidade grau 2"
+      }
+      else{
+        classificacao ="Obesidade grau 3"
+      }
+
+      document.write(nome+" possui índice de massa corporal igual a " + calcula+", sendo classificado como: " + classificacao)
+    </script>
+
+  </head>
+  <body>
+
+
+  </body>
+</html>
