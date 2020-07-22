@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de javascripto</title>
+
+    <script>
+      function acionaCampo(){
+        document.getElementById('campo').style.background = "yellow"
+      }
+
+
+      function validaCampo(){
+        var informacao = document.getElementById('campo').value
+
+        if(informacao.length < 3){
+          document.getElementById('campo').style.background = "red"
+        }else{
+          document.getElementById('campo').style.background = "green"
+        }
+      }
+
+    </script>
+
+  </head>
+  <body>
+    <h3> Exercício de revisão </h3>
+    <input onfocus = "acionaCampo()" onblur="validaCampo()" type="text" id="campo" placeholder="Digite aqui...">
+
+  </body>
+</html>

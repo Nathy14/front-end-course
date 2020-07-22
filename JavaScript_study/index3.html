@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de javascripto</title>
+
+    <script>
+      var numero1 =  prompt("Digite o primeiro numero: ")
+      var operacao = prompt("Digite o tipo da operação: soma ou subtração: ")
+      var numero2 =  prompt("Digite o segundo numero: ")
+
+      var operacao = operacao.toUpperCase()
+
+      var numero1 = parseInt(numero1)
+      var numero2 = parseInt(numero2)
+
+      if(operacao == "SOMA"){
+        document.write("O resultado da soma é: " + (numero1 + numero2))
+      }
+      else if(operacao == "SUBTRACAO" || operacao == "SUBTRAÇÃO"){
+        document.write("O resultado da subtração é: " + (numero1 - numero2))
+      }
+      else{
+        document.write("Você digitou uma operação inválida")
+      }
+
+    </script>
+
+  </head>
+  <body>
+
+
+  </body>
+</html>
