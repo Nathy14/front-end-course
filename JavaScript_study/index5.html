@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de javascripto</title>
+
+    <script>
+      var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+
+      function adicionaElemento(){
+      var valor_campo = document.getElementById('campo').value
+        if(valor_campo === ''){
+          alert('Informe um valor válido')
+        }
+
+        else{
+          if(objetos.indexOf(valor_campo) !== -1){
+            alert('Objeto já foi adicionado')
+          }else{
+            objetos.push(valor_campo)
+            console.log(objetos)
+            document.getElementById('campo').value = ''
+          }
+        }
+      }
+
+      function ordenaElemento(){
+        objetos.sort()
+        console.log(objetos)
+      }
+
+    </script>
+
+  </head>
+  <body>
+    <h3> Exercício de revisão </h3>
+    <input id = "campo" type="text" >
+    <button onclick = "adicionaElemento()" id="adiciona" type = "submit">Adicionar</button>
+    <button onclick = "ordenaElemento()" id="ordena"  type = "submit">Ordenar</button>
+
+  </body>
+</html>
